@@ -26,7 +26,7 @@ export default function App() {
       tarefa.id === id ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
     ));
   };
-
+ 
   return (
     <SafeAreaView style={styles.container}>
       <CadastrarTarefa onAdicionarTarefa={adicionarTarefa} />
